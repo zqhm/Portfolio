@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    color: #5B2E91;
+}
+
+.profile-container {
+    width: 1000px;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeInContainer 1.5s ease forwards;
+    box-shadow: 0 0 30px #4B0082, 0 0 60px #5B2E91;
+}
+
+@keyframes fadeInContainer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.halo-effect {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: 7px solid black;
+    box-shadow: 0 0 25px #4B0082, 0 0 50px #5B2E91;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    animation: fadeInText 2s ease forwards;
+    opacity: 0;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+p {
+    font-size: 20px;
+    margin: 30px 0; 
+    animation: fadeInText 2s ease forwards;
+    opacity: 0;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+@keyframes fadeInText {
+    to { opacity: 1; }
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px; 
+    animation: fadeInText 3s ease forwards;
+    opacity: 0;
+}
+
+.social-media-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #4B0082, -5px -5px 15px #5B2E91;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-media-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #5B2E91, 0 0 40px #4B0082;
+}
+
+.social-media-icon svg {
+    width: 50%;
+    height: auto;
+    fill: #5B2E91;
+    transition: transform 0.3s;
+}
+
+.social-media-icon:hover svg {
+    transform: scale(1.1);
+}
